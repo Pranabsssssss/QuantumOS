@@ -124,11 +124,10 @@ const defaultApps: AppConfig[] = [
   { id: 'gallery', name: 'Gallery', icon: 'Gallery', component: 'Gallery', defaultSize: { width: 800, height: 600 }, url: 'https://galary-quant.vercel.app' },
   { id: 'ai-chat', name: 'AI Chat', icon: 'Bot', component: 'AIChat', defaultSize: { width: 500, height: 700 } },
   { id: 'typester', name: 'Typester', icon: 'Keyboard', component: 'Typester', defaultSize: { width: 900, height: 550 } },
-  { id: 'cloudrive', name: 'Cloudrive', icon: 'Cloud', component: 'Cloudrive', defaultSize: { width: 900, height: 600 } },
   { id: 'settings', name: 'Settings', icon: 'Settings', component: 'Settings', defaultSize: { width: 600, height: 500 } },
 ];
 
-const defaultPinnedApps = ['browser', 'ai-chat', 'typester', 'cloudrive', 'calculator', 'camera', 'arcade', 'music', 'gallery', 'settings'];
+const defaultPinnedApps = ['browser', 'calculator', 'camera', 'gallery', 'settings'];
 
 let nextZIndex = 10;
 

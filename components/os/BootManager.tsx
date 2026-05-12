@@ -70,27 +70,14 @@ export const BootManager: React.FC<{ children: React.ReactNode }> = ({ children 
   };
 
   const LoginScreen = () => {
-    const [password, setPassword] = useState('');
-    const [error, setError] = useState(false);
     const [isLoggingIn, setIsLoggingIn] = useState(false);
-    const inputRef = useRef<HTMLInputElement>(null);
-
-    useEffect(() => {
-      inputRef.current?.focus();
-    }, []);
 
     const handleLogin = (e?: React.FormEvent) => {
       e?.preventDefault();
-      if (password === 'takumi') {
-        setIsLoggingIn(true);
-        setTimeout(() => {
-          setBootStage('desktop');
-        }, 1200);
-      } else {
-        setError(true);
-        setPassword('');
-        setTimeout(() => setError(false), 2000);
-      }
+      setIsLoggingIn(true);
+      setTimeout(() => {
+        setBootStage('desktop');
+      }, 1200);
     };
 
     const isVideo = wallpaper.endsWith('.mp4') || wallpaper.endsWith('.webm');
@@ -138,43 +125,13 @@ export const BootManager: React.FC<{ children: React.ReactNode }> = ({ children 
           </h1>
 
           <form onSubmit={handleLogin} className="w-full px-8 flex flex-col gap-4">
-            <div className="relative group">
-              <input
-                ref={inputRef}
-                type="password"
-                placeholder="Password"
-                value={password}
-                onChange={(e) => setPassword(e.target.value)}
-                disabled={isLoggingIn}
-                className={clsx(
-                  "w-full bg-white/10 backdrop-blur-xl border border-white/10 rounded-xl px-5 py-3.5 pr-12 text-white placeholder-white/30 focus:outline-none focus:border-accent transition-all font-space",
-                  error && "border-red-500 shadow-[0_0_20px_rgba(239,68,68,0.3)] animate-shake",
-                  isLoggingIn && "opacity-50"
-                )}
-              />
-              <button 
-                type="submit"
-                disabled={isLoggingIn}
-                className="absolute right-2 top-1/2 -translate-y-1/2 p-2 hover:bg-white/10 rounded-lg transition-colors text-accent"
-              >
-                {isLoggingIn ? <Loader2 size={18} className="animate-spin" /> : <ArrowRight size={18} />}
-              </button>
-            </div>
-            
-            <AnimatePresence>
-              {error && (
-                <motion.p 
-                  initial={{ opacity: 0, y: -10 }}
-                  animate={{ opacity: 1, y: 0 }}
-                  exit={{ opacity: 0 }}
-                  className="text-red-400 text-xs font-bold text-center uppercase tracking-widest mt-2"
-                >
-                  Incorrect password
-                </motion.p>
-              )}
-            </AnimatePresence>
-
-
+            <button 
+              type="submit"
+              disabled={isLoggingIn}
+              className="w-full bg-white/10 hover:bg-white/20 backdrop-blur-xl border border-white/10 rounded-xl px-5 py-3.5 text-white transition-all font-space flex items-center justify-center gap-2"
+            >
+              {isLoggingIn ? <Loader2 size={18} className="animate-spin" /> : <>Login <ArrowRight size={18} /></>}
+            </button>
           </form>
         </motion.div>
 

@@ -16,8 +16,7 @@ import { Gallery } from '@/components/apps/Gallery';
 import { Settings } from '@/components/apps/Settings';
 import { AIChat } from '@/components/apps/AIChat';
 import { Typester } from '@/components/apps/Typester';
-import { Cloudrive } from '@/components/apps/Cloudrive';
-import { BrowserIcon, CalculatorIcon, CameraIcon, ArcadeIcon, MusicIcon, GalleryIcon, SettingsIcon, BotIcon, KeyboardIcon, CloudIcon } from './Icons';
+import { BrowserIcon, CalculatorIcon, CameraIcon, ArcadeIcon, MusicIcon, GalleryIcon, SettingsIcon, BotIcon, KeyboardIcon } from './Icons';
 
 const iconMap: Record<string, React.ReactNode> = {
   Globe: <BrowserIcon size={16} />,
@@ -29,7 +28,6 @@ const iconMap: Record<string, React.ReactNode> = {
   Settings: <SettingsIcon size={16} />,
   Bot: <BotIcon size={16} />,
   Keyboard: <KeyboardIcon size={16} />,
-  Cloud: <CloudIcon size={16} />,
 };
 
 const ComponentMap: Record<string, React.FC<any>> = {
@@ -42,7 +40,6 @@ const ComponentMap: Record<string, React.FC<any>> = {
   Settings,
   AIChat,
   Typester,
-  Cloudrive,
 };
 
 export const Desktop = () => {

@@ -11,7 +11,6 @@ Quantum OS is a state-of-the-art, immersive Web Operating System designed with a
 - 🚀 **Native App Suite**:
   - **Quantex Browser**: A secure, sandboxed web navigation engine.
   - **Neural Chat**: A high-performance interface for complex interactions.
-  - **Cloudrive**: Fully integrated cloud storage and file management.
   - **Typester Pro**: Professional typing metrics and performance engine.
   - **Media Hub**: Immersive music and video playback with global taskbar controls.
 - ⚡ **Dynamic Performance**: Powered by Framer Motion for frame-accurate animations and transitions.
