@@ -1,80 +1,50 @@
-# Quantum OS 🌌
+# QuantumOS
 
-Quantum OS is a state-of-the-art, immersive Web Operating System designed with a focus on high-fidelity aesthetics, fluid performance, and a premium user experience. Built using the latest web technologies, it transforms your browser into a fully functional, multi-tasking desktop environment.
+> A web-based operating system experience with a highly polished glassmorphism interface, built for Takumi Delhi 2026.
 
-![Quantum OS Banner](https://images.unsplash.com/photo-1639762681485-074b7f938ba0?q=80&w=2000&auto=format&fit=crop)
+## 🥇 1st Place — Takumi Delhi 2026
 
-## ✨ Core Features
+**QuantumOS** is a web-based operating system concept that I built for **Takumi Delhi 2026**, a game development and technology hackathon in Delhi.
 
-- 🖥️ **Multi-Window Environment**: Draggable, resizable, and stackable windows with a sophisticated Z-index management system.
-- 🎨 **Premium Glassmorphism**: High-end UI design featuring real-time blurs, frosted glass effects, and dynamic accent colors.
-- 🚀 **Native App Suite**:
-  - **Quantex Browser**: A secure, sandboxed web navigation engine.
-  - **Neural Chat**: A high-performance interface for complex interactions.
-  - **Typester Pro**: Professional typing metrics and performance engine.
-  - **Media Hub**: Immersive music and video playback with global taskbar controls.
-- ⚡ **Dynamic Performance**: Powered by Framer Motion for frame-accurate animations and transitions.
-- 🔐 **Secure Session Management**: Integrated login architecture with encrypted session handling and logout triggers.
-- 🛠️ **Universal Theming**: One-click accent color synchronization across all system components and applications.
+The project secured **1st Place / Gold Medal** at the event.
 
-## 🛠️ Technology Stack
-
-- **Framework**: [Next.js 15+](https://nextjs.org/) (App Router)
-- **Language**: [TypeScript](https://www.typescriptlang.org/)
-- **Styling**: [Tailwind CSS](https://tailwindcss.com/) & Vanilla CSS Modules
-- **Animations**: [Framer Motion](https://www.framer.com/motion/)
-- **State Management**: [Zustand](https://github.com/pmndrs/zustand)
-- **Icons**: [Lucide React](https://lucide.dev/) & Custom SVG Engine
-
-## 🚀 Getting Started
-
-### Prerequisites
-
-- Node.js 18.x or higher
-- npm, yarn, or pnpm
-
-### Installation
-
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/yourusername/quantum-os.git
-   cd quantum-os
-   ```
-
-2. Install dependencies:
-   ```bash
-   npm install
-   ```
-
-3. Run the development server:
-   ```bash
-   npm run dev
-   ```
-
-4. Build for production:
-   ```bash
-   npm run build
-   ```
-
-## 📂 Project Structure
-
-```text
-├── app/                # Next.js App Router (Layouts & Pages)
-├── components/         # UI Architecture
-│   ├── apps/           # Native Application Components
-│   ├── os/             # Core OS Components (Desktop, Taskbar, etc.)
-│   └── ui/             # Reusable Design System Components
-├── public/             # Static Assets (Wallpapers, Audio, Branding)
-├── store/              # Global State (OS Registry & User Preferences)
-└── styles/             # Global CSS & Design Tokens
-```
-
-## 📜 License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+The project was also presented and awarded by **Veditha Reddy, IAS, Director of Education, Delhi**.
 
 ---
 
-<p align="center">
-  Built with passion for the web. 🌐
-</p>
+# 🏆 Achievement
+
+## 🥇 1st Place — Gold Medalist
+
+QuantumOS won **1st position** at **Takumi Delhi 2026**.
+
+The project was developed as a web-based operating system experience, focusing heavily on creating a polished, modern, and interactive desktop environment directly inside the browser.
+
+The project was also recognized and awarded by:
+
+**Veditha Reddy, IAS**  
+Director of Education, Delhi
+
+---
+
+# What Is QuantumOS?
+
+QuantumOS is a **web-based operating system** designed to recreate the experience of using a modern desktop operating system directly inside a web browser.
+
+Instead of being an actual low-level operating system kernel, QuantumOS provides a browser-based desktop environment with interactive applications, windows, navigation, system interfaces, and a complete visual operating-system experience.
+
+```text
+                    QuantumOS
+                        │
+                        ▼
+                 Browser Desktop
+                        │
+          ┌─────────────┼─────────────┐
+          │             │             │
+          ▼             ▼             ▼
+       Windows        Apps        System UI
+          │             │             │
+          └─────────────┼─────────────┘
+                        │
+                        ▼
+                Interactive Web OS
