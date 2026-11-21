@@ -15,7 +15,7 @@ export const Music: React.FC = () => {
 
   // Load tracks from API
   useEffect(() => {
-    fetch('/api/music')
+    fetch('/api/music.json')
       .then(res => res.json())
       .then((data: Track[]) => {
         setTracks(data);

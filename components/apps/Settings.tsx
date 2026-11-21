@@ -32,7 +32,7 @@ export const Settings = () => {
   const [isFetchingWps, setIsFetchingWps] = useState(true);
 
   React.useEffect(() => {
-    fetch('/api/wallpapers')
+    fetch('/api/wallpapers.json')
       .then(res => res.json())
       .then(data => {
         setDynamicWallpapers(data);
