@@ -2,11 +2,13 @@
 
 ## Cloudflare Pages deployment
 
-QuantumOS is configured as a static Next.js export for Cloudflare Pages. In the Pages project settings, use `npm run build` as the build command and `out` as the build output directory. The music and wallpaper catalog endpoints are generated as static JSON files during the build.
+QuantumOS is configured as a static Next.js export for automatic deployment through Cloudflare Pages Git integration. Connect this GitHub repository to a Pages project and set:
 
-To deploy from a local terminal, authenticate Wrangler with `npx wrangler login`, create a Pages project named `quantumos` in the Cloudflare dashboard (or with Wrangler), then run `npm run pages:deploy`. To preview the static build locally, run `npm run pages:preview`.
+- Framework preset: **Next.js (Static HTML Export)**
+- Build command: `npm run build`
+- Build output directory: `out`
 
-This project uses Cloudflare Pages static hosting; do not use `wrangler deploy` or an OpenNext Worker build for this target. Those commands deploy a Worker and caused the missing self-service binding error shown in the deployment log.
+Pages builds and publishes the site automatically when you push to the connected GitHub branch. Leave any custom deploy command empty; Pages handles deployment itself. No Wrangler CLI or Cloudflare API token is required in this project. The music and wallpaper catalogs are generated as static JSON files during the build.
 
 > A web-based operating system experience with a highly polished glassmorphism interface, built for Takumi Delhi 2026.
 
