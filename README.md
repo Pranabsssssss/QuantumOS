@@ -2,13 +2,15 @@
 
 ## Cloudflare Pages deployment
 
-QuantumOS is configured as a static Next.js export for automatic deployment through Cloudflare Pages Git integration. Connect this GitHub repository to a Pages project and set:
+QuantumOS is configured as a static Next.js export for Cloudflare Pages. For a custom build/deploy setup, use:
 
-- Framework preset: **Next.js (Static HTML Export)**
 - Build command: `npm run build`
+- Deploy command: `npm run deploy`
 - Build output directory: `out`
 
-Pages builds and publishes the site automatically when you push to the connected GitHub branch. Leave any custom deploy command empty; Pages handles deployment itself. No Wrangler CLI or Cloudflare API token is required in this project. The music and wallpaper catalogs are generated as static JSON files during the build.
+The deploy script runs `wrangler pages deploy out --project-name quantumos`. It publishes the static export from `out` as a Pages deployment; it does not run an OpenNext/Worker deployment. Wrangler is pinned in this repository so the build does not download an unpinned CLI.
+
+Because this setup invokes Wrangler from a custom deploy command, configure `CLOUDFLARE_API_TOKEN` as a secret in the Cloudflare build environment. Give the token **Account → Cloudflare Pages → Edit** access for the account that owns the `quantumos` project. Do not put the token in this repository. The music and wallpaper catalogs are generated as static JSON files during the build.
 
 > A web-based operating system experience with a highly polished glassmorphism interface, built for Takumi Delhi 2026.
 
